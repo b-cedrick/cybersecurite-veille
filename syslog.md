@@ -7,7 +7,7 @@ Ce processus est géré par un système de journalisation appelé  **syslog**.
 **Syslog** : C' est un protocole développé dans les années 1980, qui permet de collecter les messages des services qui tournent sur linux et les enregistrer dans des fichiers appelés « **fichiers log** » ( logs files en anglais ), c’est fichiers sont placé dans **/var/log.**
 
 Syslog permet de filtrer les messages et les stocke dans  **/var/log**  par type de message.  
-Voyons voir les fichiers logs minimals présents dans /var/log :
+Liste des fichiers logs minimals présents dans /var/log :
 ```
 -/var/log/secure
 
