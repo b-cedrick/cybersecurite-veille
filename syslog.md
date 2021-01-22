@@ -137,6 +137,7 @@ La rotation de log est géré par un programe appelé  **Logrotate**  et un cron
 ## Analyser les enregistrements de syslog :
 
 Tous les enregistrements sur les fichiers log gérés par syslog sont dans un format standard. 
+
 Ex:
 ```Nov 14 12:01:23   localhost   run-parts(/etc/cron.daily)[1962] : starting logrotate```
 1.  L’horodatage : date et heure de l’entréé.
