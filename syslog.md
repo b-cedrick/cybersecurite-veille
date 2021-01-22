@@ -110,7 +110,7 @@ La facilty indique le type de message généré par un programme, le tableau ci-
 
 Devant chaque  _« Facility.Priority »_  est indiqué le fichier sur lequel syslog enregistre les messages.
 
-**NB : 
+**NB :** 
 
 > _un wildcard ( * ) peut être utilisé pour indiquer toute les Facility ou Priority :_ mail.***
 
