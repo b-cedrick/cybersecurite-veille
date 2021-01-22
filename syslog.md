@@ -1,3 +1,4 @@
+
 # Syslog
 
 La **journalisation** ( historique des événements) est un moyen que les systèmes d’exploitation utilise pour enregistrer toutes les actions d’un événement qui a eu lieu (exécution d’un processus, activité réseau etc ), permettant ainsi de localiser plus rapidement les défaillance d’un système.
@@ -79,18 +80,39 @@ Les programmes utilisent syslog pour enregistre leurs événements et ces évent
 
 La Priorité indique la criticité du message généré par un programme, Le tableau ci-dessous présentes la liste des priorité syslog :
 
-![](https://sysreseau.net/wp-content/uploads/2018/11/syslog-1-1-300x83.png)
+|  Code| Priorité |	Description|
+|--|--|--|
+| 0 | Emergencie | Le système est unitilisable |
+| 1 | Alert | Une action immediate est requise | 
+| 2 | Critical | Condition critique | 
+| 3 | Errors | Erreurs détéctés | 
+| 4 | Warning | Avertissement | 
+| 5 | Notice | Evenement normal mais significatif | 
+| 6 | Info | Message d'information | 
+| 7 | Debug | Débogage | 
 
 -La facilty indique le type de message généré par un programme, le tableau ci-dessous présente ces types de message :
+|  Type| 	Description|
+|--|--|
+| kern | Utilisé pour les messages du noyau |
+| user | Utilisateur | 
+| mail | Messagerie |
+| cron | Le planificateur de tâches | 
+| auth | Utilisé pour plusieurs événements de sécurité | 
+| authpriv | Utilisé pour les controles d'accès | 
+| daemon | Utilisé par les process système et les daemon | 
+| mark | Pour les messages générés par syslog lui même contenant un horodatage et la chaine de caractère "--MARK--" | 
 
-![](https://sysreseau.net/wp-content/uploads/2018/11/facility-1-300x89.png)
 
-_**NB :**_  
-_**Noter que Facility et Priority d’un message est déterminé par le programme qui génère le message et pas par syslog.**_
+**NB :**
+
+> **Noter que Facility et Priority d’un message est déterminé par le programme qui génère le message et pas par syslog.**
 
 Devant chaque  _« Facility.Priority »_  est indiqué le fichier sur lequel syslog enregistre les messages.
 
-**NB : _un wildcard ( * ) peut être utilisé pour indiquer toute les Facility ou Priority :_ mail.***
+**NB : 
+
+> _un wildcard ( * ) peut être utilisé pour indiquer toute les Facility ou Priority :_ mail.***
 
 Voyons voir des exemples pour que les choses soit bien claire :
 
