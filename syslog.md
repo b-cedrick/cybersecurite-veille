@@ -91,7 +91,7 @@ La Priorité indique la criticité du message généré par un programme, Le tab
 | 6 | Info | Message d'information | 
 | 7 | Debug | Débogage | 
 
--La facilty indique le type de message généré par un programme, le tableau ci-dessous présente ces types de message :
+La facilty indique le type de message généré par un programme, le tableau ci-dessous présente ces types de message :
 |  Type| 	Description|
 |--|--|
 | kern | Utilisé pour les messages du noyau |
